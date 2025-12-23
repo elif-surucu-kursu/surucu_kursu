@@ -1,0 +1,26 @@
+{
+    "site_name": "Elif Trafik Sürücü Kursu",
+    "hero": {
+        "title": "Direksiyonda Güvenle, Hayatta Özgürce",
+        "description": "20 yıllık tecrübemiz ve uzman eğitmen kadromuzla, sizi trafiğin en güvenli sürücüsü yapıyoruz. İlk seferde ehliyet garantisi!",
+        "button_text": "Hemen Kayıt Ol"
+    },
+    "stats": {
+        "success": "%100",
+        "experience": "20+"
+    },
+    "courses_section": {
+        "title": "Hayalinizdeki Ehliyete Bir Adım Daha Yakın"
+    },
+    "contact": {
+        "address": "Tecde Mahallesi Yeşilyurt caddesi Point evleri, D:193/A, 44090 Yeşilyurt/Malatya",
+        "phone": "0552 871 47 44",
+        "phone_mobile": "0552 871 47 44",
+        "whatsapp": "905528714744",
+        "email": "info@elifsurucu.com",
+        "working_hours": "Hafta içi: 08:00 - 20:00, Hafta sonu: 09:00 - 18:00"
+    },
+    "footer": {
+        "copyright": "2025 Elif Trafik Sürücü Kursu. Tüm hakları saklıdır."
+    }
+}

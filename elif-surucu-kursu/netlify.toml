@@ -1,0 +1,27 @@
+# Netlify Configuration
+# Bu dosya Netlify'a site yapılandırmasını söyler
+
+[build]
+  # Build komutu yok çünkü static site
+  publish = "."
+  
+[build.environment]
+  # Node.js versiyonu (gerekirse)
+  NODE_VERSION = "18"
+
+# Admin klasörü için temiz URL
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+# Güvenlik başlıkları
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+

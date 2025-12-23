@@ -1,0 +1,13 @@
+{
+  "notifications": [
+    {
+      "title": "Yeni Dönem Kayıtları Başladı!",
+      "content": "2025 yılı için yeni dönem kayıtlarımız başlamıştır. Erken kayıt avantajlarından yararlanın!",
+      "type": "Duyuru",
+      "active": true,
+      "start_date": "2025-01-01T00:00:00.000Z",
+      "end_date": "2025-02-28T23:59:59.000Z"
+    }
+  ]
+}
+

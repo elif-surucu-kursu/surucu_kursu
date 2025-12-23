@@ -1,0 +1,203 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Lokal geliştirme için
+local_backend: true
+
+collections:
+  - name: "dashboard"
+    label: "📊 Dashboard"
+    files:
+      - file: "data/site_settings.json"
+        label: "Genel Bakış"
+        name: "dashboard"
+        fields:
+          - {label: "Site Adı", name: "site_name", widget: "string"}
+
+  - name: "settings"
+    label: "⚙️ Site Ayarları"
+    files:
+      - file: "data/site_settings.json"
+        label: "Genel Ayarlar"
+        name: "general_settings"
+        fields:
+          - {label: "Site Adı", name: "site_name", widget: "string"}
+          - label: "Ana Sayfa (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Başlık", name: "title", widget: "string"}
+              - {label: "Açıklama", name: "description", widget: "text"}
+              - {label: "Buton Yazısı", name: "button_text", widget: "string"}
+          - label: "İstatistikler"
+            name: "stats"
+            widget: "object"
+            fields:
+              - {label: "Başarı Oranı", name: "success", widget: "string"}
+              - {label: "Tecrübe Yılı", name: "experience", widget: "string"}
+          - label: "Kurslar Bölümü"
+            name: "courses_section"
+            widget: "object"
+            fields:
+              - {label: "Bölüm Başlığı", name: "title", widget: "string"}
+          - label: "İletişim Bilgileri"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Adres", name: "address", widget: "text"}
+              - {label: "Telefon 1", name: "phone", widget: "string"}
+              - {label: "Telefon 2", name: "phone_mobile", widget: "string"}
+              - {label: "WhatsApp No (905...)", name: "whatsapp", widget: "string"}
+              - {label: "E-posta", name: "email", widget: "string"}
+              - {label: "Çalışma Saatleri", name: "working_hours", widget: "string"}
+          - label: "Alt Bilgi (Footer)"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Telif Hakkı Metni", name: "copyright", widget: "string"}
+          - label: "Sosyal Medya"
+            name: "social"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Facebook URL", name: "facebook", widget: "string"}
+              - {label: "Instagram URL", name: "instagram", widget: "string"}
+              - {label: "Twitter URL", name: "twitter", widget: "string"}
+              - {label: "YouTube URL", name: "youtube", widget: "string"}
+
+  - name: "courses"
+    label: "🎓 Kurs Yönetimi"
+    files:
+      - file: "data/courses.json"
+        label: "Kurs Listesi"
+        name: "course_list"
+        fields:
+          - label: "Kurslar"
+            name: "courses"
+            widget: "list"
+            fields:
+              - {label: "ID (Değiştirmeyin)", name: "id", widget: "string"}
+              - {label: "Kurs Adı", name: "title", widget: "string"}
+              - {label: "Fiyat", name: "price", widget: "string"}
+              - {label: "Açıklama", name: "description", widget: "text"}
+              - {label: "Öne Çıkarılmış", name: "featured", widget: "boolean", default: false}
+              - {label: "Aktif", name: "active", widget: "boolean", default: true}
+
+  - name: "faq"
+    label: "❓ Sıkça Sorulan Sorular"
+    files:
+      - file: "data/faq.json"
+        label: "SSS Listesi"
+        name: "faq_list"
+        fields:
+          - label: "Sorular"
+            name: "questions"
+            widget: "list"
+            fields:
+              - {label: "Soru", name: "question", widget: "string"}
+              - {label: "Cevap", name: "answer", widget: "text"}
+              - {label: "Kategori", name: "category", widget: "select", options: ["Genel", "Kayıt", "Sınav", "Ödeme", "Eğitim"], default: "Genel"}
+              - {label: "Sıralama", name: "order", widget: "number", default: 0}
+
+  - name: "blog"
+    label: "📝 Blog Yönetimi"
+    files:
+      - file: "data/blog_posts.json"
+        label: "Blog Yazıları"
+        name: "blog_posts"
+        fields:
+          - label: "Blog Yazıları"
+            name: "posts"
+            widget: "list"
+            fields:
+              - {label: "ID (URL için)", name: "id", widget: "string"}
+              - {label: "Başlık", name: "title", widget: "string"}
+              - {label: "Kategori", name: "category", widget: "select", options: ["Sınav Rehberi", "Güvenlik", "Başlangıç", "İleri Sürüş", "Trafik Kuralları", "Pratik Sürüş", "Bakım", "Yasal Bilgiler"]}
+              - {label: "Okuma Süresi", name: "read_time", widget: "string"}
+              - {label: "İkon (Emoji)", name: "icon", widget: "string"}
+              - {label: "Yayın Tarihi", name: "date", widget: "date"}
+              - {label: "Yayında", name: "published", widget: "boolean", default: true}
+              - {label: "Öne Çıkarılmış", name: "featured", widget: "boolean", default: false}
+
+  - name: "pages"
+    label: "📄 Sayfa İçerikleri"
+    files:
+      - file: "data/pages.json"
+        label: "Sayfa İçerikleri"
+        name: "pages_content"
+        create: true
+        fields:
+          - label: "Sayfalar"
+            name: "pages"
+            widget: "list"
+            fields:
+              - {label: "Sayfa Adı", name: "page_name", widget: "string"}
+              - {label: "Başlık", name: "title", widget: "string"}
+              - {label: "Açıklama", name: "description", widget: "text"}
+              - {label: "Meta Açıklama (SEO)", name: "meta_description", widget: "text"}
+
+  - name: "testimonials"
+    label: "💬 Müşteri Yorumları"
+    files:
+      - file: "data/testimonials.json"
+        label: "Yorumlar"
+        name: "testimonials_list"
+        create: true
+        fields:
+          - label: "Yorumlar"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: "Ad Soyad", name: "name", widget: "string"}
+              - {label: "Kurs", name: "course", widget: "string"}
+              - {label: "Yorum", name: "comment", widget: "text"}
+              - {label: "Yıldız (1-5)", name: "rating", widget: "number", min: 1, max: 5, default: 5}
+              - {label: "Fotoğraf", name: "photo", widget: "image"}
+              - {label: "Yayında", name: "published", widget: "boolean", default: true}
+              - {label: "Tarih", name: "date", widget: "date"}
+
+  - name: "notifications"
+    label: "🔔 Bildirimler ve Duyurular"
+    files:
+      - file: "data/notifications.json"
+        label: "Bildirimler"
+        name: "notifications_list"
+        create: true
+        fields:
+          - label: "Bildirimler"
+            name: "notifications"
+            widget: "list"
+            fields:
+              - {label: "Başlık", name: "title", widget: "string"}
+              - {label: "İçerik", name: "content", widget: "text"}
+              - {label: "Tip", name: "type", widget: "select", options: ["Bilgi", "Uyarı", "Başarı", "Duyuru"], default: "Bilgi"}
+              - {label: "Aktif", name: "active", widget: "boolean", default: true}
+              - {label: "Başlangıç Tarihi", name: "start_date", widget: "datetime"}
+              - {label: "Bitiş Tarihi", name: "end_date", widget: "datetime"}
+
+  - name: "analytics"
+    label: "📈 İstatistikler"
+    files:
+      - file: "data/analytics.json"
+        label: "Site İstatistikleri"
+        name: "analytics_data"
+        create: true
+        fields:
+          - label: "Genel İstatistikler"
+            name: "general"
+            widget: "object"
+            fields:
+              - {label: "Toplam Ziyaretçi", name: "total_visitors", widget: "number", default: 0}
+              - {label: "Toplam Kayıt", name: "total_registrations", widget: "number", default: 0}
+              - {label: "Aylık Ziyaretçi", name: "monthly_visitors", widget: "number", default: 0}
+              - {label: "En Popüler Sayfa", name: "popular_page", widget: "string"}
+          - label: "Kurs İstatistikleri"
+            name: "courses"
+            widget: "object"
+            fields:
+              - {label: "En Çok Tercih Edilen Kurs", name: "popular_course", widget: "string"}
+              - {label: "Toplam Kurs Sayısı", name: "total_courses", widget: "number", default: 0}

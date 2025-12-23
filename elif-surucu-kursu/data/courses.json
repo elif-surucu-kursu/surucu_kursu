@@ -1,0 +1,16 @@
+{
+  "courses": [
+    {
+      "id": "b_class",
+      "title": "B Sınıfı Ehliyet"
+    },
+    {
+      "id": "a_class",
+      "title": "A Sınıfı Ehliyet"
+    },
+    {
+      "id": "c_class",
+      "title": "C Sınıfı Ehliyet"
+    }
+  ]
+}

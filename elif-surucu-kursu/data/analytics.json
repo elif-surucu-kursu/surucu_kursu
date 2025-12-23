@@ -1,0 +1,13 @@
+{
+  "general": {
+    "total_visitors": 0,
+    "total_registrations": 0,
+    "monthly_visitors": 0,
+    "popular_page": ""
+  },
+  "courses": {
+    "popular_course": "",
+    "total_courses": 0
+  }
+}
+

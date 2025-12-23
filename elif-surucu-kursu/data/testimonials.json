@@ -1,0 +1,13 @@
+{
+  "testimonials": [
+    {
+      "name": "Ahmet Yılmaz",
+      "course": "B Sınıfı Ehliyet",
+      "comment": "Çok profesyonel bir eğitim aldım. İlk seferde başarılı oldum!",
+      "rating": 5,
+      "published": true,
+      "date": "2025-01-10"
+    }
+  ]
+}
+

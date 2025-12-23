@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": "sinav-hazirlik",
+      "title": "Ehliyet Sınavına Nasıl Hazırlanılır?",
+      "category": "Sınav Rehberi",
+      "read_time": "5 Dakika Okuma",
+      "published": true,
+      "date": "2025-01-15",
+      "icon": "📝"
+    },
+    {
+      "id": "guvenli-surus",
+      "title": "Güvenli Sürüş İçin 10 Altın Kural",
+      "category": "Güvenlik",
+      "read_time": "7 Dakika Okuma",
+      "published": true,
+      "date": "2025-01-14",
+      "icon": "🛡️"
+    },
+    {
+      "id": "ilk-surus",
+      "title": "Yeni Sürücüler İçin İlk Sürüş Rehberi",
+      "category": "Başlangıç",
+      "read_time": "6 Dakika Okuma",
+      "published": true,
+      "date": "2025-01-13",
+      "icon": "🚗"
+    },
+    {
+      "id": "hava-kosullari",
+      "title": "Farklı Hava Koşullarında Sürüş",
+      "category": "İleri Sürüş",
+      "read_time": "4 Dakika Okuma",
+      "published": true,
+      "date": "2025-01-12",
+      "icon": "🌧️"
+    }
+  ]
+}
+

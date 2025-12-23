@@ -1,0 +1,28 @@
+{
+    "questions": [
+        {
+            "question": "Ehliyet almak için yaş sınırı nedir?",
+            "answer": "B sınıfı ehliyet için 18 yaşını doldurmuş olmanız gerekmektedir. A1 sınıfı (125cc motorlar için) 16 yaşından itibaren alınabilir. C sınıfı için ise 21 yaş şartı bulunmaktadır."
+        },
+        {
+            "question": "Kurs süresi ne kadar?",
+            "answer": "B sınıfı ehliyet kursu ortalama 2-3 ay sürmektedir. Bu süre, teorik eğitim, direksiyon dersleri ve sınav hazırlığını kapsar. Yoğunlaştırılmış programlarla bu süreyi 1.5 aya kadar düşürebilirsiniz."
+        },
+        {
+            "question": "Ödeme seçenekleri nelerdir?",
+            "answer": "Peşin ödeme, kredi kartına taksit (12 aya kadar) ve nakit taksit seçeneklerimiz mevcuttur. Peşin ödemede %5 ek indirim uygulanmaktadır. Detaylı bilgi için bizimle iletişime geçebilirsiniz."
+        },
+        {
+            "question": "Hangi günler ve saatlerde ders yapılıyor?",
+            "answer": "Hafta içi 08:00-20:00, hafta sonu 09:00-18:00 saatleri arasında ders yapılmaktadır. Çalışan öğrencilerimiz için akşam ve hafta sonu programları da mevcuttur. Size en uygun saati birlikte belirleyebiliriz."
+        },
+        {
+            "question": "Sınavda kalırsam ne olur?",
+            "answer": "Sınavda başarısız olmanız durumunda ücretsiz ek dersler ve sınav provası sağlıyoruz. İkinci sınav hakkınızda başarılı olmanız için gerekli tüm desteği veriyoruz. Başarı oranımız %98'dir!"
+        },
+        {
+            "question": "Hangi araçlarla eğitim veriliyor?",
+            "answer": "2022-2025 model, klimalı, otomatik ve manuel vites seçenekli araçlarımız mevcuttur. Tüm araçlarımız düzenli bakımlı ve sigortalıdır. Direksiyon eğitiminizi güvenli ve konforlu araçlarda alacaksınız."
+        }
+    ]
+}
