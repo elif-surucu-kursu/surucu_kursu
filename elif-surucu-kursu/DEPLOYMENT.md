@@ -51,6 +51,13 @@ Netlify, static web sitelerini yayınlamak için en popüler ve kullanıcı dost
 - ✅ GitHub ile otomatik deploy
 - ✅ Hızlı CDN
 
+#### Alternatif: Git Olmadan Yükleme (Netlify Drop)
+Eğer Git kullanmak istemiyorsanız veya kurulu değilse:
+1. https://app.netlify.com/drop adresine gidin.
+2. `elif-surucu-kursu` klasörünü sürükleyip sayfaya bırakın.
+3. Site saniyeler içinde yayına girecektir.
+4. Daha sonra güncelleme yapmak için "Deploys" sekmesinden yeni klasör sürükleyebilirsiniz.
+
 ---
 
 ### 2. Vercel (Alternatif - Çok Hızlı)
